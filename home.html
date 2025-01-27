@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+/* Logo styling */
+ .logo {
+    font-family: "Montserrat", sans-serif; /* Similar modern font */
+    font-size: 28px; /* Adjust as needed */
+    letter-spacing: 3px; /* Spacing between letters */
+    font-weight: 600; /* Semi-bold weight */
+    color: #000000; /* Black color like the logo */
+    text-transform: uppercase; /* All letters in uppercase */
+}
+
+.logo-link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4b400; /* Hover effect color */
+}
+.background{
+    background-image: url(https://cdn.pixabay.com/photo/2023/05/13/21/07/flower-7991447_1280.jpg);
+    height: 800px;
+    width: 1400px;
+}
+.footer {
+    background-image: url(https://www.heet.org.uk/wp-content/uploads/2016/06/gradient-background-wallpaper.jpg);background-repeat: no-repeat;background-size: cover;
+            /* background-color: #266980; */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer .section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer .section h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .footer .section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .section ul li {
+            margin: 5px 0;
+        }
+
+        .footer .section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer .section ul li a:hover {
+            color: #00aaff;
+        }
+
+        .footer .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .footer .social-icons a {
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #00aaff;
+        }
+
+        .footer .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .footer .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .text{
+            display: flex;
+            font-size: 50px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .visit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+        <!-- Header -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="" class="logo-link">32 SMILES</a>
+            </div>
+            <ul class="nav-links">
+                <li class="About">
+                    <a href="#">About</a>
+                </li>
+                <li class="service">
+                    <a href="#">Services</a>
+                </li>
+                <li><a href="#">Warranty</a></li>
+                <li><a href="tel:123456789" class="phone-number">0123-456-789</a></li>
+                <li>
+                    <a href="#" class="book-button">BOOK ONLINE</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="background"></div>
+
+        <div class="visit">
+            <div class="images">
+                <img src="https://cdn.pixabay.com/photo/2022/12/15/09/13/nature-7657230_640.jpg" alt="Room 1">
+                <img src="https://cdn.pixabay.com/photo/2023/10/01/16/01/rose-8287698_640.jpg" alt="Room 2">
+                <img src="https://cdn.pixabay.com/photo/2023/07/28/20/36/flower-8155951_640.jpg" alt="Sign">
+                <img src="https://cdn.pixabay.com/photo/2021/05/27/14/40/anemone-6288318_640.jpg" alt="Meeting area">
+            </div>
+            <div class="info">
+                <h1 style="font-size: 50px;font-style: italic;">Visit Us</h1>
+                <p style="font-size: 20px;font-style: italic;">We’re conveniently located in the Denver Tech Center area. Find us on the 4th floor of the Triad Office Park building. Plenty of free parking available.</p>
+                <p class="address"><i class="icon-location"></i> 5670 Greenwood Plaza Blvd., Suite 404<br>Greenwood Village, CO 80111</p>
+                <a href="#" class="directions" style="font-size: 20px;font-style: italic;">Get Directions</a>
+                <p class="hours"><i class="icon-clock" style="font-size: 20px;font-style: italic;"></i> Monday–Thursday: 7AM–3PM</p>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="section">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to providing the best service and quality content to our customers.</p>
+                </div>
+                <div class="section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#">&#x1F426; Twitter</a>
+                        <a href="#">&#x1F4F7; Instagram</a>
+                        <a href="#">&#x1F464; Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Your Company. All rights reserved.
+            </div>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
